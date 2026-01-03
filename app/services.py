@@ -1,7 +1,8 @@
 # services.py
 from typing import Any, Dict, List, Optional
 from app.utils import hash_pw_bcrypt, verify_pw_bcrypt
-from app.db.db import Ticket, Mitarbeiter, daten_abfragen
+from app.db.repositories import Ticket, Mitarbeiter
+from app.db.database import daten_abfragen
 
 PRIO_WERTE = [
     "niedrig",
