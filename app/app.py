@@ -1,25 +1,12 @@
 #app.py
-from typing import Any, Dict, List
-import pandas as pd
 import streamlit as st
 
-from .services import (
-    TicketDienst,
-    AuthDienst,
-    PRIO_WERTE,
-    KANBAN_STATUS,
-    NEXT_STATUS,
-    PREV_STATUS,
-)
+from .services import AuthDienst
 
 
 from app.pages.admin import admin_seite
 from app.pages.ticket_create import ui_ticket_erstellen
 from app.pages.kanban import kanban_seite
-from .components import zeige_statistiken, kanban
-from .utils import datum_formatieren
-from .db.repositories import Mitarbeiter
-from .db.database import daten_abfragen
 
 class AppUI:
     """Streamlit-Oberfläche"""

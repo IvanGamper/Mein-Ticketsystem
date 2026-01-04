@@ -2,7 +2,7 @@
 from typing import Any, Dict, List, Optional
 from datetime import datetime, timezone
 
-from .database import DBVerbindung, daten_abfragen, query_ausfuehren
+from .database import DBVerbindung
 from .database import daten_abfragen, query_ausfuehren
 
 class Mitarbeiter:

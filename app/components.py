@@ -1,5 +1,5 @@
 # components.py
-from typing import Any, Dict, List
+
 import streamlit as st
 from app.services import TicketDienst
 from app.utils import datum_formatieren
