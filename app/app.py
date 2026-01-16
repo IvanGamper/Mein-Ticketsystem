@@ -2,8 +2,6 @@
 import streamlit as st
 
 from .services import AuthDienst
-
-
 from app.pages.admin import admin_seite
 from app.pages.ticket_create import ui_ticket_erstellen
 from app.pages.kanban import kanban_seite
@@ -115,7 +113,7 @@ def main():
         "➕ Ticket erstellen"
     ]
 
-    if st.session_state.get("role") == "admin":
+    if st.session_state.get("role") == "Admin":
         menue.append("🛠️ Verwaltung")
 
     auswahl = st.sidebar.radio(
